@@ -14,17 +14,17 @@ import (
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 
-	"github.com/babylonchain/staking-expiry-checker/internal/btcclient"
-	"github.com/babylonchain/staking-expiry-checker/internal/config"
-	"github.com/babylonchain/staking-expiry-checker/internal/db"
-	"github.com/babylonchain/staking-expiry-checker/internal/db/model"
-	"github.com/babylonchain/staking-expiry-checker/internal/observability/metrics"
-	"github.com/babylonchain/staking-expiry-checker/internal/poller"
-	"github.com/babylonchain/staking-expiry-checker/internal/queue"
-	"github.com/babylonchain/staking-expiry-checker/internal/services"
-	"github.com/babylonchain/staking-queue-client/client"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/btcclient"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/config"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/db"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/db/model"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/observability/metrics"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/poller"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/queue"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/services"
+	"github.com/babylonlabs-io/staking-queue-client/client"
 
-	queueconfig "github.com/babylonchain/staking-queue-client/config"
+	queueconfig "github.com/babylonlabs-io/staking-queue-client/config"
 )
 
 type TestServerDependency struct {

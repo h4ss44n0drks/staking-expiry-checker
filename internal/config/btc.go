@@ -3,7 +3,7 @@ package config
 import (
 	"fmt"
 
-	"github.com/babylonchain/staking-expiry-checker/internal/utils"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/utils"
 )
 
 type BtcConfig struct {

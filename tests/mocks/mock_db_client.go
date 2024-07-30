@@ -7,7 +7,7 @@ import (
 
 	mock "github.com/stretchr/testify/mock"
 
-	model "github.com/babylonchain/staking-expiry-checker/internal/db/model"
+	model "github.com/babylonlabs-io/staking-expiry-checker/internal/db/model"
 
 	primitive "go.mongodb.org/mongo-driver/bson/primitive"
 )

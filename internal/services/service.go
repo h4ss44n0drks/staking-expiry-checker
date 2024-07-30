@@ -3,10 +3,10 @@ package services
 import (
 	"context"
 
-	"github.com/babylonchain/staking-expiry-checker/internal/btcclient"
-	"github.com/babylonchain/staking-expiry-checker/internal/db"
-	"github.com/babylonchain/staking-expiry-checker/internal/queue"
-	queueclient "github.com/babylonchain/staking-queue-client/client"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/btcclient"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/db"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/queue"
+	queueclient "github.com/babylonlabs-io/staking-queue-client/client"
 )
 
 type Service struct {
