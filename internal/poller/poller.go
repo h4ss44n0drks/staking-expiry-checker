@@ -6,7 +6,7 @@ import (
 
 	"github.com/rs/zerolog/log"
 
-	"github.com/babylonchain/staking-expiry-checker/internal/services"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/services"
 )
 
 type Poller struct {

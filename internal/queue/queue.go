@@ -7,9 +7,9 @@ import (
 
 	"github.com/rs/zerolog/log"
 
-	"github.com/babylonchain/staking-expiry-checker/internal/observability/metrics"
-	"github.com/babylonchain/staking-queue-client/client"
-	queueConfig "github.com/babylonchain/staking-queue-client/config"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/observability/metrics"
+	"github.com/babylonlabs-io/staking-queue-client/client"
+	queueConfig "github.com/babylonlabs-io/staking-queue-client/config"
 )
 
 type QueueManager struct {

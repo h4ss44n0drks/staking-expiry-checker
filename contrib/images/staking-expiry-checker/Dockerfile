@@ -15,12 +15,12 @@ RUN apk add --no-cache  \
     openssh
 
 # Build
-WORKDIR /go/src/github.com/babylonchain/staking-expiry-checker
+WORKDIR /go/src/github.com/babylonlabs-io/staking-expiry-checker
 # Cache dependencies
-COPY go.mod go.sum /go/src/github.com/babylonchain/staking-expiry-checker/
+COPY go.mod go.sum /go/src/github.com/babylonlabs-io/staking-expiry-checker/
 
 # Copy the rest of the files
-COPY ./ /go/src/github.com/babylonchain/staking-expiry-checker/
+COPY ./ /go/src/github.com/babylonlabs-io/staking-expiry-checker/
 
 
 RUN LDFLAGS='-extldflags "-static" -v' \
@@ -37,12 +37,12 @@ RUN addgroup --gid 1138 -S staking-expiry-checker && adduser --uid 1138 -S staki
 RUN apk add bash curl jq
 
 # Label should match your github repo
-LABEL org.opencontainers.image.source="https://github.com/babylonchain/staking-expiry-checker:${VERSION}"
+LABEL org.opencontainers.image.source="https://github.com/babylonlabs-io/staking-expiry-checker:${VERSION}"
 
 
 # Copy over binaries from the build-env
-COPY --from=builder /go/src/github.com/babylonchain/staking-expiry-checker/build/staking-expiry-checker /bin/staking-expiry-checker
-COPY --from=builder /go/src/github.com/babylonchain/staking-expiry-checker/contrib/images/staking-expiry-checker/entrypoint.sh /bin/entrypoint.sh
+COPY --from=builder /go/src/github.com/babylonlabs-io/staking-expiry-checker/build/staking-expiry-checker /bin/staking-expiry-checker
+COPY --from=builder /go/src/github.com/babylonlabs-io/staking-expiry-checker/contrib/images/staking-expiry-checker/entrypoint.sh /bin/entrypoint.sh
 
 WORKDIR /home/staking-expiry-checker
 RUN chown -R staking-expiry-checker /home/staking-expiry-checker

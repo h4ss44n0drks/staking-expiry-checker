@@ -7,14 +7,14 @@ import (
 	"github.com/joho/godotenv"
 	"github.com/rs/zerolog/log"
 
-	"github.com/babylonchain/staking-expiry-checker/cmd/staking-expiry-checker/cli"
-	"github.com/babylonchain/staking-expiry-checker/internal/btcclient"
-	"github.com/babylonchain/staking-expiry-checker/internal/config"
-	"github.com/babylonchain/staking-expiry-checker/internal/db"
-	"github.com/babylonchain/staking-expiry-checker/internal/observability/metrics"
-	"github.com/babylonchain/staking-expiry-checker/internal/poller"
-	"github.com/babylonchain/staking-expiry-checker/internal/queue"
-	"github.com/babylonchain/staking-expiry-checker/internal/services"
+	"github.com/babylonlabs-io/staking-expiry-checker/cmd/staking-expiry-checker/cli"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/btcclient"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/config"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/db"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/observability/metrics"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/poller"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/queue"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/services"
 )
 
 func init() {

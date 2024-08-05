@@ -11,7 +11,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/rs/zerolog/log"
 
-	"github.com/babylonchain/staking-expiry-checker/internal/utils"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/utils"
 )
 
 type Outcome string

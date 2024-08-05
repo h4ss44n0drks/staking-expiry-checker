@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   staking-expiry-checker:
-    image: babylonchain/staking-expiry-checker:latest
+    image: babylonlabs/staking-expiry-checker:latest
     container_name: staking-expiry-checker
     environment:
       - CONFIG=/home/staking-expiry-checker/config.yml

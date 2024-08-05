@@ -9,8 +9,8 @@ import (
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 
-	"github.com/babylonchain/staking-expiry-checker/internal/config"
-	"github.com/babylonchain/staking-expiry-checker/internal/db/model"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/config"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/db/model"
 )
 
 type Database struct {

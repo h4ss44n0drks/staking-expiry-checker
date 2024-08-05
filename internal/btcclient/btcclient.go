@@ -4,9 +4,9 @@ import (
 	"github.com/btcsuite/btcd/chaincfg"
 	"github.com/btcsuite/btcd/rpcclient"
 
-	"github.com/babylonchain/staking-expiry-checker/internal/config"
-	"github.com/babylonchain/staking-expiry-checker/internal/observability/metrics"
-	"github.com/babylonchain/staking-expiry-checker/internal/utils"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/config"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/observability/metrics"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/utils"
 )
 
 type BtcClient struct {
