@@ -33,10 +33,10 @@ build-docker:
 	$(MAKE) BBN_PRIV_DEPLOY_KEY=${BBN_PRIV_DEPLOY_KEY} -C contrib/images staking-expiry-checker
 
 start-staking-expiry-checker: build-docker stop-service
-	docker-compose up -d
+	docker compose up -d
 
 stop-service:
-	docker-compose down
+	docker compose down
 	
 run-local:
 	./bin/local-startup.sh;
