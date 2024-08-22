@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/babylonchain/staking-expiry-checker/internal/db/model"
-	"github.com/babylonchain/staking-expiry-checker/tests/mocks"
-	"github.com/babylonchain/staking-queue-client/client"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/db/model"
+	"github.com/babylonlabs-io/staking-expiry-checker/tests/mocks"
+	"github.com/babylonlabs-io/staking-queue-client/client"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 	"go.mongodb.org/mongo-driver/bson/primitive"

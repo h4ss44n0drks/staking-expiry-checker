@@ -3,7 +3,7 @@ package db
 import (
 	"context"
 
-	"github.com/babylonchain/staking-expiry-checker/internal/db/model"
+	"github.com/babylonlabs-io/staking-expiry-checker/internal/db/model"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
